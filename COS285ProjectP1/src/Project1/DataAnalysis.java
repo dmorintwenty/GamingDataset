@@ -88,15 +88,15 @@ public class DataAnalysis {
 
     /**
      * analyzes the relationship between daily gaming hours
-     * and total screen time
+     * and average sleep in hours per person
      *
      * @return an array containing the average gaming hours
-     * and average screen time
+     * and average sleep hours
      */
     public double[] analyzeGamingAndSleepHours() {
 
         double totalGamingHours = 0;
-        double totalScreenTime = 0;
+        double totalSleepHours = 0;
 
         // move the records into the linked list
         for (int i = 0; i < records.size(); i++) {
@@ -131,18 +131,19 @@ public class DataAnalysis {
 
             totalGamingHours += record.getDailyGamingHours();
 
-            totalScreenTime += record.getSleepHours();
+            totalSleepHours += record.getSleepHours();
         }
 
         double averageGamingHours =
                 totalGamingHours / records.size();
 
-        double averageScreenTime =
-                totalScreenTime / records.size();
+        double averageSleepHours =
+                totalSleepHours / records.size();
+       
 
         return new double[] {
             averageGamingHours,
-            averageScreenTime
+            averageSleepHours
         };
     }
 }

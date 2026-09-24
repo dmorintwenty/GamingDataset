@@ -52,7 +52,7 @@ public class MySystem {
             System.out.println();
             System.out.println("/// Gaming Data Analysis System ///");
             System.out.println("1. Analyze gaming hours and addiction level");
-            System.out.println("2. Analyze gaming hours and screen time");
+            System.out.println("2. Analyze gaming hours and hours of sleep");
             System.out.println("3. Print a row");
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
@@ -81,7 +81,7 @@ public class MySystem {
 
                 System.out.println();
                 System.out.println(
-                        "/// Gaming Hours and Screen Time Analysis ///");
+                        "/// Daily Gaming Hours Analytics ///");
 
                 System.out.println(
                         "Average Daily Gaming Hours: " + results[0]);
