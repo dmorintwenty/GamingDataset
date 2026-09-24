@@ -1,13 +1,4 @@
 package Project1;
-/*
- * Method Checklist
- * push
- * pop
- * peek
- * isEmpty
- * size
- * 
- */
 
 
 public class MyStack<T> {
@@ -28,33 +19,62 @@ public class MyStack<T> {
 	private Node top;
 	private int size;
 
-public MyStack() {
-   top = null;
-   size = 0;
-}
-
-public void push(T element) {
-	Node newNode = new Node(element);
-	newNode.next = top;
+	/**
+	 * Initializes a stack
+	 */
+	public MyStack() {
+	   top = null;
+	   size = 0;
+	}
 	
-	top = newNode;
-	size++;
-}
-
-public T pop() {
-	T removed = top.data;
-	top = top.next;
+	/**
+	 * adds generic type element to top of stack and increases stack size by 1
+	 * @param element --> Value being added to top of stack
+	 */
+	public void push(T element) {
+		Node newNode = new Node(element);
+		newNode.next = top;
+		
+		top = newNode;
+		size++;
+	}
 	
-	size--;
-	return removed;
+	/**
+	 * removes top value in stack and returns the removed value and decreases stack size by 1
+	 * @return --> previously top value that is now removed
+	 */
+	public T pop() {
+		T removed = top.data;
+		top = top.next;
+		
+		size--;
+		return removed;
+	
+	}
+	
+	/**
+	 * @return --> The data value that is at the top of the stack
+	 */
+	public T peek() {
+		return top.data;
+	}
+	
+	
+	/**
+	 * @return --> Size of the stack in int value
+	 */
+	public int size() {
+		
+		return size;
+		}
+	
+	/**
+	 * returns true if size of stack is 0
+	 * @return --> true if stack is empty
+	 */
+	public boolean isEmpty() {
+		return (size == 0);
+		}
 
-}
 
-public T peek() {
-	return top.data;
-}
-
-
-//TODO: size()
-//TODO:isEmpty()
 }

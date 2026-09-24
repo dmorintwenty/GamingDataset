@@ -1,6 +1,5 @@
 package Project1;
 //@Author Dax Morin
-//This is my custom implementation of an ArrayList because using the one that was given to me is not cool
 import java.util.*;
 
 public class MyArrayList<T> implements Iterable<T> {
