@@ -12,16 +12,16 @@ Custom Queue
 
 The system currently processes the first 100 data rows from the provided CSV file due to hardware restrictions. Each row is converted into a GamingRecord object for analysis while also being stored in all four custom data structures.
 
-How to Compile and Run
+How to Compile and Run:
 Requirements
 Java Development Kit (JDK)
 Eclipse IDE or another Java IDE
 The Gaming and Mental Health CSV dataset
 All .java files located in the Project1 package
 
-The project uses standard Java classes and does not require external libraries.
+The project uses standard Java classes and does not use any third party libraries that may need to be installed.
 
-Project Structure
+Project Structure:
 COS285ProjectP1/
 Project1/
     MySystem.java
@@ -33,7 +33,7 @@ Project1/
     MyStack.java
     MyQueue.java
     
-Compiling
+Compiling:
 Open the project in Eclipse.
 Make sure all Java files are located inside the Project1 package.
 Make sure the project has a valid JDK configured.
