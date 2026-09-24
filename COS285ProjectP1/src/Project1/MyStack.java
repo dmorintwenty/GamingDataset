@@ -1,5 +1,5 @@
 package Project1;
-
+//@Author Dax Morin
 
 public class MyStack<T> {
 	 
