@@ -210,7 +210,7 @@ After the dataset is loaded, the program displays the following menu:
 
 /// Gaming Data Analysis System ///
 1. Analyze gaming hours and addiction level
-2. Analyze gaming hours and screen time
+2. Analyze gaming hours and hours of sleep
 3. Print a row
 4. Exit
 
