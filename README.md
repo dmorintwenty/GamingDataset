@@ -237,8 +237,6 @@ The ArrayList and LinkedList retain their values when a row is retrieved.
 
 The Stack and Queue use removal operations when retrieving rows. Because of this, checking a row through either of these structures removes values from that structure. The program informs the user when the selected value has been removed.
 
-Authors & Title
-
 COS 285 Project Phase 1 - Gaming Data Analysis
 
 Author: Dax Morin
